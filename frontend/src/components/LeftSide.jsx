@@ -6,7 +6,6 @@ import {
   Heart,
   House,
   ListCollapse,
-  Menu,
   MessageCircleMore,
   Search,
   SquarePlus,
@@ -15,13 +14,13 @@ import {
 
 export default function LeftSide() {
   return (
-    <div className="bg-gray-50 px-2">
-      <p>Instagram</p>
+    <div className=" px-4 space-y-4 py-8    sticky inset-0  h-[100vh]  border-r border-gray-300 w-6/12">
+      <img height={100} width={100} src="/insta.png" alt="" />
 
-      <div className="flex flex-col justify-between h-[96vh]">
+      <div className="flex flex-col justify-between h-[85vh]">
         <div>
         {linkstop.map((eachItem, index) => (
-          <div key={index} className="flex items-center gap-4 font-semibold py-4 hover:bg-gray-200 cursor-pointer rounded-md opacity-70">
+          <div key={index} className="flex items-center gap-4 font-semibold py-4 px-2 hover:bg-gray-200 cursor-pointer rounded-md opacity-70">
             {eachItem.icon}
             <p>{eachItem.title}</p>
           </div>
@@ -37,6 +36,7 @@ export default function LeftSide() {
             ))}
         </div>
       </div>
+      
     </div>
   );
 }

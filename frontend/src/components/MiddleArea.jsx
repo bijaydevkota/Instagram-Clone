@@ -3,8 +3,8 @@ import NewsFeedSection from './NewsFeedSection'
 
 export default function MiddleArea() {
   return (
-    <div>
-      <div className='flex gap-4 overflow-y-scroll px-2 py-8'>
+    <div className='px-1 md:px-16'>
+      <div className='flex gap-4 overflow-y-auto px-2 py-8'>
       {
         stories.map((eachStory,index)=>(
           <div key={index}>

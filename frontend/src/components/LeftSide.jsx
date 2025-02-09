@@ -14,7 +14,7 @@ import {
 
 export default function LeftSide() {
   return (
-    <div className=" px-4 space-y-4 py-8">
+    <div className="hidden md:block px-4 space-y-4 mt-8">
       <img height={120} width={120} src="/insta.png" alt="" />
 
       <div className="flex flex-col justify-between h-[85vh]">

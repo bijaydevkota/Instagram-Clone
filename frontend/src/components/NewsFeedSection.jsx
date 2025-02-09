@@ -9,47 +9,53 @@ import React from "react";
 
 export default function NewsFeedSection() {
   return (
-    <div className="mt-8 space-y-8 px-4 lg:px-20">
-      
-        {posts.map((eachPost, index) => (
-          <div key={index} className="space-y-2">
-            <div className="flex justify-between items-center">
-              <div className="flex items-center gap-4">
-                <img
-                  className="h-10 w-10 object-cover rounded-full"
-                  src={eachPost.profilePicture}
-                  alt=""
-                />
-                <p>
-                  {eachPost.username} .{" "}
-                  <span className="text-xs opacity-70 font-semibold">
-                    10 min ago
-                  </span>
-                </p>
-              </div>
-              <MoreHorizontal />
+    <div className="space-y-8 px-1 lg:px-20">
+      {posts.map((eachPost, index) => (
+        <div key={index} className="space-y-2">
+          <div className="px-4 md:px-0 flex justify-between items-center">
+            <div className="flex items-center gap-4">
+              <img
+                className="h-10 w-10 object-cover rounded-full"
+                src={eachPost.profilePicture}
+                alt=""
+              />
+              <p>
+                {eachPost.username} .{" "}
+                <span className="text-xs opacity-70 font-semibold">
+                  10 min ago
+                </span>
+              </p>
             </div>
-
-            <img
-              className="h-[70vh] w-full object-cover rounded mt-2"
-              src={eachPost.postPicture}
-              alt=""
-            />
-
-            <div className="flex justify-between">
-              <div className="flex gap-4">
-                <Heart />
-                <MessageCircle />
-                <Send />
-              </div>
-              <Bookmark />
-            </div>
-            <p>{eachPost.caption}</p>
-            <hr className=" mt-6 text-gray-400"/>
+            <MoreHorizontal />
           </div>
-        ))}
-      </div>
-    
+
+          <img
+            className="h-[70vh] w-full object-cover rounded mt-2"
+            src={eachPost.postPicture}
+            alt=""
+          />
+
+         <div className="px-4 md:px-0 mt-4">
+         <div className="flex justify-between">
+            <div className="flex gap-4">
+              <Heart />
+              <MessageCircle />
+              <Send />
+            </div>
+            <Bookmark />
+          </div>
+          <p className="mt-4">
+            {" "}
+            <span className="font-semibold">{eachPost.username}</span>{" "}
+            {eachPost.caption}
+          </p>
+          <p className="text-xs opacity-70 font-semibold">10 min ago</p>
+         </div>
+
+          <hr className="hidden md:block text-gray-300 mt-8" />
+        </div>
+      ))}
+    </div>
   );
 }
 

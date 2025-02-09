@@ -4,14 +4,14 @@ import NewsFeedSection from './NewsFeedSection'
 export default function MiddleArea() {
   return (
     <div>
-      <div className='py-8 flex gap-4 overflow-x-scroll '>
+      <div className='flex gap-4 overflow-y-scroll px-2 py-8'>
       {
         stories.map((eachStory,index)=>(
           <div key={index}>
-          <div className=' h-16 w-16'>
+          <div className='h-16 w-16'>
           <img className='rounded-full h-16 w-16 object-cover border-3 border-red-500 p-0.5' src={eachStory.profilePicture} alt="pp" />
           </div>
-          <p className='text-sm text-center'>{eachStory.username.slice(0,10)}</p>
+          <p className='text-sm text-center'>{eachStory.username.slice(0,8)}</p>
         </div>
         ))
       }
@@ -32,12 +32,12 @@ const stories=[
   {
     profilePicture:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
     storyPicture:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
-    username:"binod_dhami"
+    username:"binod"
   },
   {
     profilePicture:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
     storyPicture:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
-    username:"lokichaulagain"
+    username:"lokichaulaga"
   },
   {
     profilePicture:"https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",

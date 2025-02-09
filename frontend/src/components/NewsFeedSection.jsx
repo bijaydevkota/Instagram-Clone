@@ -9,8 +9,8 @@ import React from "react";
 
 export default function NewsFeedSection() {
   return (
-    <div>
-      <div className="mt-6 p-2">
+    <div className="mt-8 space-y-8 px-4 lg:px-20">
+      
         {posts.map((eachPost, index) => (
           <div key={index} className="space-y-2">
             <div className="flex justify-between items-center">
@@ -45,11 +45,11 @@ export default function NewsFeedSection() {
               <Bookmark />
             </div>
             <p>{eachPost.caption}</p>
-            <hr className=" mt-4 mb-6"/>
+            <hr className=" mt-6 text-gray-400"/>
           </div>
         ))}
       </div>
-    </div>
+    
   );
 }
 

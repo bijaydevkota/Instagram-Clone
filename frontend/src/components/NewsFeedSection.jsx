@@ -9,7 +9,7 @@ import React from "react";
 
 export default function NewsFeedSection() {
   return (
-    <div className="space-y-8 px-1 lg:px-20">
+    <div className="space-y-8 px-1 lg:px-20 mt-4 md:mt-4">
       {posts.map((eachPost, index) => (
         <div key={index} className="space-y-2">
           <div className="px-4 md:px-0 flex justify-between items-center">

@@ -2,13 +2,13 @@ import React from "react";
 
 export default function RightSide() {
   return (
-    <div className="space-y-8 px-10 py-8">
+    <div className=" px-10 py-8">
       <div className="flex justify-between items-center font-semibold opacity-80">
         <p className="opacity-70">Suggested For You</p>
         <p className="text-blue-500 cursor-pointer text-sm">See All</p>
       </div>
 
-      <div className="space-y-4 ">
+      <div className="space-y-4 mt-8">
         {people.map((eachItem, index) => (
           <div key={index} className="flex justify-between items-center">
             <div className="flex gap-2">

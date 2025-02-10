@@ -7,7 +7,7 @@ import RightSide from "./components/RightSide";
 export default function App() {
   return (
     <div>
-      <MobileNavBar/>
+      
       <div className="relative flex  h-screen">
         <div className="sticky top-0 h-screen w-2/12 lg:w-2/12 hidden sm:block border-r border-gray-300">
           <LeftSide />
@@ -22,7 +22,7 @@ export default function App() {
         </div>
       </div>
 
-      <MobileMenu />
+      
     </div>
   );
 }

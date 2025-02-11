@@ -19,7 +19,7 @@ import RightSide from "./components/RightSide.jsx";
 
 export function Root() {
   const location = useLocation();
-  console.log(location);
+  console.log(location.pathname);
   return (
     <StrictMode>
       <MobileNavBar />
@@ -42,7 +42,7 @@ export function Root() {
         </div>
 
         <div className="sticky top-0 h-screen bg-gray-50 w-2/12 lg:w-4/12 hidden lg:block px-10">
-          <RightSide />
+         {location.pathname==="/"&& <RightSide />}
         </div>
       </div>
 

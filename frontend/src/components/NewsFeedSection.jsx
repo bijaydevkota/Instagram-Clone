@@ -108,7 +108,7 @@ const posts = [
   {
     profilePicture:
       "https://images.unsplash.com/photo-1521252659862-eec69941b071?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaWN0dXJlc3xlbnwwfHwwfHx8MA%3D%3D",
-    username: "puza_xettri",
+    username: "bimla_saud",
     postPicture:
       "https://images.unsplash.com/photo-1521252659862-eec69941b071?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaWN0dXJlc3xlbnwwfHwwfHx8MA%3D%3D",
     caption:
@@ -117,7 +117,7 @@ const posts = [
   {
     profilePicture:
       "https://images.unsplash.com/photo-1613145997970-db84a7975fbb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBwaWN0dXJlc3xlbnwwfHwwfHx8MA%3D%3D",
-    username: "bibel_chaulagain",
+    username: "bibek_chaulagain",
     postPicture:
       "https://images.unsplash.com/photo-1613145997970-db84a7975fbb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHByb2ZpbGUlMjBwaWN0dXJlc3xlbnwwfHwwfHx8MA%3D%3D",
     caption:

@@ -11,7 +11,7 @@ import React from "react";
 
 export default function ReelsPage() {
   return (
-    <div className="">
+    <div className="max-h-screen">
       {reels.map((eachItem, index) => (
         <div key={index} className="relative">
           <video
